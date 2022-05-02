@@ -59,9 +59,9 @@ remove.addEventListener('click', () => {
 
 save.addEventListener('click', () => {
     let totalPoints = 0;
-    for (let point of stats) {
-        point = stats.points;
-        totalPoints += point;
+    for (let player of stats) {
+        let pointCount = Number(player.points);
+        totalPoints += pointCount;
     }
     const game = {
         number: games.length + 1,
